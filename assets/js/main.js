@@ -1,3 +1,33 @@
+document.getElementById('btn1').addEventListener('click', function() {
+    document.getElementById('home__description').innerText = "Introducing the Cotton Hoodie Slim Fit, a stylish and practical addition to anyone's wardrobe. Made from premium cotton, this hoodie offers a soft and comfortable feel against your skin. Its vibrant red color adds a pop of personality to any outfit, while the slim fit design ensures a modern and flattering silhouette. Built to last, this hoodie is both durable and easy to care for, handling hot water washes effortlessly. Perfect for chilly weather, it provides warmth and style without sacrificing comfort. Elevate your casual look with this versatile and high-quality hoodie.";
+    document.querySelector('.home__img').src = 'models/model3_og.png';
+    document.getElementById('User-Name').innerText = 'Register';
+    document.querySelector('.featured__img1').src = 'models/model1_og.webp';
+    document.querySelector('.featured__img2').src = 'models/model2_og.png';
+    document.querySelector('.featured__img4').src = 'models/model4_og.webp';
+
+});
+
+document.getElementById('btn2').addEventListener('click', function() {
+    document.getElementById('home__description').innerText = "This cotton hoodie slim fit is a versatile addition to any wardrobe. Its vibrant red color exudes confidence and energy, perfect for making a bold statement. Crafted with durability in mind, this hoodie is designed to withstand hot water washes, ensuring easy care and maintenance. Ideal for cold weather, it provides both warmth and style. Made with high-quality cotton, it offers exceptional comfort and longevity. Whether you're out for a casual stroll or braving the elements, this hoodie is sure to keep you looking sharp and feeling comfortable.";
+    document.querySelector('.home__img').src = 'models/model3_latinv2.png';
+    document.getElementById('User-Name').innerText = 'Santiago Torres';
+    document.querySelector('.featured__img1').src = 'models/model1_latin.png';
+    document.querySelector('.featured__img2').src = 'models/model2_latin.png';
+    document.querySelector('.featured__img4').src = 'models/model4_latin.png';
+});
+
+document.getElementById('btn3').addEventListener('click', function() {
+    document.getElementById('home__description').innerText = "Prepare for a stylish upgrade with the Cotton Hoodie Slim Fit, perfect for embracing chilly days with flair. This cozy hoodie in bold red promises warmth and comfort with its premium cotton material, ideal for the discerning gentleman. Tailored to a flattering slim fit, it ensures both style and functionality, while its durability ensures longevity even after countless washes. Whether you're braving the outdoors or simply enjoying a leisurely day, this hoodie is a versatile addition to your wardrobe. So why wait? Elevate your cold-weather ensemble effortlessly with this must-have piece.";
+    document.querySelector('.home__img').src = 'models/model3_old.png';
+    document.getElementById('User-Name').innerText = 'Marcos Piotto';
+    document.querySelector('.featured__img1').src = 'models/model1_old.png';
+    document.querySelector('.featured__img2').src = 'models/model2_old.png';
+    document.querySelector('.featured__img4').src = 'models/model4_old.png';
+
+});
+
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),

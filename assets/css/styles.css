@@ -6,7 +6,7 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --first-color: hsl(31, 100%, 70%);
+  --first-color: hsl(195, 77%, 85%);
   --button-color: hsl(0, 0%, 17%);
   --button-color-alt: hsl(0, 0%, 21%);
   --title-color: hsl(0, 0%, 15%);
@@ -75,7 +75,7 @@ input {
 }
 
 body {
-  margin: 0;
+  /* margin: 10px; */
   background-color: var(--body-color);
   color: var(--text-color);
   /*For animation dark mode*/
@@ -191,6 +191,19 @@ body.dark-theme {
   background-color: var(--first-color);
 }
 
+/* change the main-description div */
+.main-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    position: fixed;
+    top: 20%;
+    /* make it on top of everything */
+    z-index: 100;
+}
+
+
 /*=============== HEADER & NAV ===============*/
 .header {
   width: 100%;
@@ -228,6 +241,8 @@ body.dark-theme {
 
 .nav__logo-icon {
   font-size: 1.25rem;
+  /* change font to arial */
+  font-family: Arial, sans-serif;
 }
 
 .nav__btns {
@@ -302,17 +317,21 @@ body.dark-theme {
 .home__container {
   position: relative;
   row-gap: 2.5rem;
+  padding-top: 0rem;
 }
 
 .home__img {
-  width: 240px;
+  /* width: 200%; */
+  min-width: 600px;
+
 }
 
 .home__img-bg {
   background-color: var(--first-color);
-  width: 258px;
-  height: 430px;
-  padding-bottom: 2rem;
+  padding: 0px;
+  width: 858px;
+  /* height: 430px; */
+  /* padding-bottom: 2rem; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -366,6 +385,8 @@ body.dark-theme {
   box-shadow: 0 12px 24px hsla(0, 0%, 10%, .2);
 }
 
+
+
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
@@ -375,6 +396,8 @@ body.dark-theme {
   font-weight: var(--font-medium);
   transition: .3s;
 }
+
+
 
 .button:hover {
   background-color: var(--button-color-alt);
@@ -394,6 +417,19 @@ body.dark-theme {
 }
 
 /*=============== FEATURED ===============*/
+.featured.section.container {
+  padding: 0;
+}
+.featured__img1 {
+  min-width: 310px;
+}
+.featured__img2 {
+  max-width:265px;
+}
+.featured__img4 {
+  max-width: 245px;
+}
+
 .featured__container {
   row-gap: 2.5rem;
 }
@@ -402,7 +438,7 @@ body.dark-theme {
   position: relative;
   text-align: center;
   background-color: var(--container-color);
-  padding-top: 2rem;
+  padding-top: 1rem;
   border: 1px solid var(--border-color);
   overflow-y: hidden;
   transition: .3s;
@@ -422,7 +458,7 @@ body.dark-theme {
 }
 
 .featured__img {
-  height: 214px;
+  height: 500px;
   margin-bottom: var(--mb-1);
 }
 
